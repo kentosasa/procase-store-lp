@@ -1,0 +1,1271 @@
+/* ========================================
+   リセット & 基本設定
+======================================== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Helvetica Neue', 'Arial', 'Hiragino Kaku Gothic ProN', 'Hiragino Sans', 'Meiryo', sans-serif;
+    line-height: 1.8;
+    color: #333;
+    background-color: #fff;
+}
+
+.container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 20px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+h2 {
+    font-size: 2.5rem;
+    text-align: center;
+    margin-bottom: 50px;
+    color: #2c3e50;
+    line-height: 1.4;
+}
+
+h2 .subtitle {
+    display: block;
+    font-size: 1.2rem;
+    font-weight: normal;
+    color: #7f8c8d;
+    margin-top: 10px;
+}
+
+h3 {
+    font-size: 1.8rem;
+    color: #2c3e50;
+    margin-bottom: 20px;
+    line-height: 1.4;
+}
+
+h3 .subtitle {
+    display: block;
+    font-size: 1rem;
+    font-weight: normal;
+    color: #7f8c8d;
+    margin-top: 5px;
+}
+
+h4 {
+    font-size: 1.3rem;
+    color: #2c3e50;
+    margin-bottom: 15px;
+}
+
+p {
+    margin-bottom: 15px;
+}
+
+.lead {
+    font-size: 1.1rem;
+    line-height: 2;
+    text-align: center;
+    margin-bottom: 40px;
+    color: #555;
+}
+
+.note {
+    font-size: 0.9rem;
+    color: #95a5a6;
+    line-height: 1.6;
+}
+
+/* ========================================
+   ボタン
+======================================== */
+.cta-button {
+    display: inline-block;
+    padding: 18px 40px;
+    font-size: 1.1rem;
+    font-weight: bold;
+    text-decoration: none;
+    border-radius: 8px;
+    transition: all 0.3s ease;
+    text-align: center;
+}
+
+.cta-button.primary {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    box-shadow: 0 4px 15px rgba(102, 126, 234, 0.4);
+}
+
+.cta-button.primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.6);
+}
+
+.cta-button.large {
+    padding: 25px 50px;
+    font-size: 1.3rem;
+}
+
+.cta-button {
+    background-color: #3498db;
+    color: #fff;
+}
+
+.cta-button:hover {
+    background-color: #2980b9;
+    transform: translateY(-2px);
+}
+
+/* ========================================
+   ファーストビュー
+======================================== */
+.hero {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    padding: 100px 0 80px;
+    text-align: center;
+}
+
+.hero-title {
+    font-size: 3rem;
+    line-height: 1.4;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.hero-subtitle {
+    font-size: 1.3rem;
+    line-height: 1.8;
+    margin-bottom: 50px;
+    opacity: 0.95;
+}
+
+.hero-features {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 30px;
+    margin-bottom: 50px;
+    max-width: 900px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.feature-item {
+    display: flex;
+    align-items: flex-start;
+    text-align: left;
+    gap: 15px;
+    flex: 1;
+    min-width: 250px;
+}
+
+.feature-item .icon {
+    font-size: 1.5rem;
+    background-color: rgba(255, 255, 255, 0.2);
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-shrink: 0;
+}
+
+.trust-badges {
+    margin-top: 60px;
+    padding-top: 40px;
+    border-top: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+.trust-badges p {
+    font-size: 1.1rem;
+    margin-bottom: 20px;
+}
+
+.badges {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.badges span {
+    padding: 10px 25px;
+    background-color: rgba(255, 255, 255, 0.2);
+    border-radius: 25px;
+    font-size: 1rem;
+}
+
+/* ========================================
+   悩み訴求セクション
+======================================== */
+.problems {
+    background-color: #f8f9fa;
+}
+
+.problem-list {
+    max-width: 900px;
+    margin: 0 auto 50px;
+}
+
+.problem-item {
+    display: flex;
+    gap: 20px;
+    margin-bottom: 30px;
+    padding: 25px;
+    background-color: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+}
+
+.problem-icon {
+    font-size: 1.5rem;
+    flex-shrink: 0;
+}
+
+.problem-content {
+    flex: 1;
+}
+
+.problem-text {
+    font-size: 1.1rem;
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-weight: 500;
+}
+
+.solution-text {
+    font-size: 1rem;
+    color: #3498db;
+    margin-bottom: 0;
+    padding-left: 15px;
+}
+
+.solution-headline {
+    text-align: center;
+    font-size: 1.8rem;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.solution-headline strong {
+    color: #667eea;
+    font-size: 2rem;
+}
+
+/* ========================================
+   選ばれる理由セクション
+======================================== */
+.reasons {
+    background-color: #fff;
+}
+
+.reason-item {
+    max-width: 900px;
+    margin: 0 auto 60px;
+    padding: 40px;
+    background-color: #f8f9fa;
+    border-radius: 12px;
+}
+
+.reason-number {
+    display: inline-block;
+    padding: 8px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-bottom: 20px;
+}
+
+.reason-content {
+    line-height: 2;
+}
+
+.highlight-box {
+    background-color: #fff;
+    padding: 25px;
+    border-left: 4px solid #667eea;
+    margin: 25px 0;
+    border-radius: 4px;
+}
+
+.highlight-box strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.highlight-box ul, .highlight-box ol {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.highlight-box li {
+    margin-bottom: 8px;
+}
+
+.highlight-box .note {
+    margin-top: 15px;
+}
+
+/* カラーパレット */
+.color-palette {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+    gap: 20px;
+    margin: 30px 0;
+}
+
+.color-item {
+    text-align: center;
+}
+
+.color-circle {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin: 0 auto 15px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.15);
+}
+
+.color-circle.white { background-color: #ffffff; border: 2px solid #e0e0e0; }
+.color-circle.black { background-color: #000000; }
+.color-circle.red { background-color: #e74c3c; }
+.color-circle.yellow { background-color: #f1c40f; }
+.color-circle.green { background-color: #27ae60; }
+.color-circle.lightblue { background-color: #3498db; }
+.color-circle.orange { background-color: #e67e22; }
+.color-circle.beige { background-color: #d4a574; }
+
+.color-item strong {
+    display: block;
+    font-size: 1rem;
+    margin-bottom: 5px;
+}
+
+.color-item p {
+    font-size: 0.9rem;
+    color: #7f8c8d;
+    margin-bottom: 0;
+}
+
+/* ========================================
+   制作事例セクション
+======================================== */
+.portfolio {
+    background-color: #f8f9fa;
+}
+
+.portfolio-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+    gap: 30px;
+    margin-bottom: 50px;
+}
+
+.portfolio-item {
+    background-color: #fff;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: transform 0.3s ease;
+}
+
+.portfolio-item:hover {
+    transform: translateY(-5px);
+}
+
+.portfolio-item img {
+    width: 100%;
+    height: 250px;
+    object-fit: cover;
+}
+
+.portfolio-caption {
+    padding: 20px;
+}
+
+.portfolio-caption h4 {
+    font-size: 1.1rem;
+    margin-bottom: 0;
+}
+
+.cta-box {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 12px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.08);
+}
+
+.cta-box p {
+    line-height: 2;
+    margin-bottom: 30px;
+}
+
+/* ========================================
+   料金プランセクション
+======================================== */
+.pricing {
+    background-color: #fff;
+}
+
+.pricing-intro {
+    max-width: 800px;
+    margin: 0 auto 40px;
+    text-align: center;
+}
+
+.pricing-table {
+    max-width: 800px;
+    margin: 0 auto 20px;
+    width: 100%;
+    border-collapse: collapse;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.pricing-table thead {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+}
+
+.pricing-table th {
+    padding: 20px;
+    font-size: 1.2rem;
+}
+
+.pricing-table td {
+    padding: 18px;
+    text-align: center;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.pricing-table tbody tr:nth-child(even) {
+    background-color: #f8f9fa;
+}
+
+.pricing-table .highlight {
+    font-size: 1.3rem;
+    font-weight: bold;
+    color: #667eea;
+}
+
+.pricing h3 {
+    text-align: center;
+    margin: 60px 0 40px;
+}
+
+.pricing-examples {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+    gap: 30px;
+    max-width: 1000px;
+    margin: 0 auto 50px;
+}
+
+.price-example {
+    background-color: #f8f9fa;
+    padding: 30px;
+    border-radius: 8px;
+    border: 2px solid #e0e0e0;
+}
+
+.price-example h4 {
+    text-align: center;
+    margin-bottom: 25px;
+    color: #667eea;
+}
+
+.calculation {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 6px;
+    margin-bottom: 20px;
+}
+
+.calc-row {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 0;
+    border-bottom: 1px solid #e0e0e0;
+}
+
+.calc-row:last-child {
+    border-bottom: none;
+}
+
+.calc-row.total {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #667eea;
+    margin-top: 10px;
+    padding-top: 15px;
+    border-top: 2px solid #667eea;
+    border-bottom: none;
+}
+
+.per-unit {
+    text-align: center;
+    color: #555;
+    line-height: 1.8;
+}
+
+.pricing-notes {
+    max-width: 800px;
+    margin: 60px auto 40px;
+    padding: 30px;
+    background-color: #f8f9fa;
+    border-radius: 8px;
+}
+
+.pricing-notes h4 {
+    margin-bottom: 15px;
+}
+
+.pricing-notes ul {
+    margin-left: 20px;
+}
+
+.pricing-notes li {
+    margin-bottom: 10px;
+}
+
+.pricing .cta-button.large {
+    display: block;
+    max-width: 600px;
+    margin: 0 auto;
+}
+
+/* ========================================
+   制作の流れセクション
+======================================== */
+.flow {
+    background-color: #f8f9fa;
+}
+
+.flow-steps {
+    max-width: 900px;
+    margin: 0 auto;
+}
+
+.flow-step {
+    margin-bottom: 40px;
+    padding: 35px;
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 3px 10px rgba(0, 0, 0, 0.08);
+}
+
+.step-number {
+    display: inline-block;
+    padding: 8px 20px;
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    border-radius: 25px;
+    font-weight: bold;
+    margin-bottom: 15px;
+}
+
+.step-content {
+    line-height: 2;
+}
+
+.step-details {
+    background-color: #f8f9fa;
+    padding: 20px;
+    border-radius: 6px;
+    margin: 20px 0;
+}
+
+.step-details strong {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.step-details ul, .step-details ol {
+    margin-left: 20px;
+    margin-top: 10px;
+}
+
+.step-details li {
+    margin-bottom: 8px;
+}
+
+.duration {
+    font-weight: bold;
+    color: #667eea;
+    margin-top: 15px;
+}
+
+.important {
+    background-color: #fff3cd;
+    padding: 15px;
+    border-left: 4px solid #ffc107;
+    border-radius: 4px;
+    margin: 15px 0;
+}
+
+.flow-summary {
+    max-width: 700px;
+    margin: 60px auto 0;
+    padding: 40px;
+    background-color: #fff;
+    border-radius: 10px;
+    text-align: center;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+}
+
+.flow-summary h3 {
+    margin-bottom: 20px;
+}
+
+.flow-summary ul {
+    text-align: left;
+    max-width: 400px;
+    margin: 20px auto;
+}
+
+.flow-summary li {
+    margin-bottom: 10px;
+}
+
+/* ========================================
+   お問い合わせセクション
+======================================== */
+.contact {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: #fff;
+    text-align: center;
+}
+
+.contact h2 {
+    color: #fff;
+}
+
+.contact .lead {
+    color: #fff;
+}
+
+.contact-box {
+    max-width: 700px;
+    margin: 0 auto;
+    padding: 40px;
+    background-color: rgba(255, 255, 255, 0.95);
+    border-radius: 12px;
+    color: #333;
+}
+
+.contact-box strong {
+    display: block;
+    font-size: 1.1rem;
+    margin-bottom: 15px;
+}
+
+.contact-box ul {
+    text-align: left;
+    margin: 20px auto 30px;
+    max-width: 500px;
+}
+
+.contact-box li {
+    margin-bottom: 10px;
+}
+
+.contact-box .cta-button {
+    margin: 30px 0 20px;
+}
+
+.form-buttons {
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    margin-top: 30px;
+    flex-wrap: wrap;
+}
+
+.form-buttons .cta-button {
+    flex: 1;
+    min-width: 200px;
+    max-width: 280px;
+    padding: 25px 30px;
+    font-size: 1.3rem;
+    line-height: 1.6;
+}
+
+.form-buttons .button-subtitle {
+    font-size: 1rem;
+    font-weight: normal;
+    opacity: 0.9;
+}
+
+/* ========================================
+   フッター
+======================================== */
+.footer {
+    background-color: #2c3e50;
+    color: #fff;
+    text-align: center;
+    padding: 40px 0;
+}
+
+.footer p {
+    margin-bottom: 5px;
+}
+
+/* ========================================
+   固定CTAボタン
+======================================== */
+.fixed-cta {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    z-index: 1000;
+    transform: translateY(100%);
+    transition: transform 0.3s ease;
+    box-shadow: 0 -6px 30px rgba(0, 0, 0, 0.25);
+}
+
+.fixed-cta.show {
+    transform: translateY(0);
+}
+
+.fixed-cta-buttons {
+    display: flex;
+    gap: 0;
+}
+
+.fixed-cta-button {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 5px;
+    width: 50%;
+    padding: 22px 15px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s ease;
+    position: relative;
+}
+
+.fixed-cta-button.single-color {
+    background: linear-gradient(135deg, #4c63d2 0%, #3b4fc7 100%);
+    color: #fff;
+    border-right: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.fixed-cta-button.two-color {
+    background: linear-gradient(135deg, #f093fb 0%, #f5576c 100%);
+    color: #fff;
+}
+
+.fixed-cta-button:hover {
+    transform: scale(1.02);
+    filter: brightness(1.15);
+}
+
+.fixed-cta-button:active {
+    transform: scale(0.98);
+}
+
+.fixed-cta-label {
+    font-size: 0.85rem;
+    opacity: 0.95;
+    font-weight: 600;
+    letter-spacing: 0.5px;
+}
+
+.fixed-cta-text {
+    font-size: 1.3rem;
+    font-weight: bold;
+    letter-spacing: 0.5px;
+}
+
+.fixed-cta-arrow {
+    font-size: 1.4rem;
+    animation: bounceHorizontal 1.2s infinite;
+    position: absolute;
+    right: 15px;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+@keyframes bounceHorizontal {
+    0%, 100% {
+        transform: translateY(-50%) translateX(0);
+    }
+    50% {
+        transform: translateY(-50%) translateX(5px);
+    }
+}
+
+/* モバイル対応 */
+@media (max-width: 480px) {
+    .fixed-cta-button {
+        padding: 18px 10px;
+    }
+
+    .fixed-cta-label {
+        font-size: 0.75rem;
+    }
+
+    .fixed-cta-text {
+        font-size: 1.1rem;
+    }
+
+    .fixed-cta-arrow {
+        font-size: 1.2rem;
+        right: 10px;
+    }
+}
+
+/* ========================================
+   レスポンシブ対応
+======================================== */
+/* タブレット対応 */
+@media (max-width: 768px) {
+    section {
+        padding: 60px 0;
+    }
+
+    h2 {
+        font-size: 2rem;
+        margin-bottom: 40px;
+    }
+
+    h3 {
+        font-size: 1.5rem;
+    }
+
+    .hero {
+        padding: 80px 0 60px;
+    }
+
+    .hero-title {
+        font-size: 2rem;
+        line-height: 1.5;
+    }
+
+    .hero-subtitle {
+        font-size: 1.1rem;
+    }
+
+    .hero-features {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    .feature-item {
+        min-width: 100%;
+    }
+
+    .trust-badges {
+        margin-top: 40px;
+    }
+
+    .badges {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .problem-item {
+        flex-direction: column;
+        gap: 10px;
+        padding: 20px;
+    }
+
+    .reason-item {
+        padding: 25px 20px;
+    }
+
+    .color-palette {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .portfolio-grid {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 20px;
+    }
+
+    .pricing-table {
+        font-size: 0.85rem;
+    }
+
+    .pricing-table th,
+    .pricing-table td {
+        padding: 12px 6px;
+    }
+
+    .pricing-examples {
+        grid-template-columns: 1fr;
+    }
+
+    .flow-step {
+        padding: 25px 20px;
+    }
+
+    .cta-button.large {
+        padding: 20px 30px;
+        font-size: 1.1rem;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    .form-buttons .cta-button {
+        max-width: 100%;
+    }
+}
+
+/* スマホ対応 */
+@media (max-width: 480px) {
+    section {
+        padding: 40px 0;
+    }
+
+    .container {
+        padding: 0 15px;
+    }
+
+    h2 {
+        font-size: 1.5rem;
+        margin-bottom: 30px;
+        line-height: 1.5;
+    }
+
+    h2 .subtitle {
+        font-size: 0.9rem;
+        margin-top: 8px;
+    }
+
+    h3 {
+        font-size: 1.3rem;
+        line-height: 1.5;
+    }
+
+    h3 .subtitle {
+        font-size: 0.85rem;
+    }
+
+    h4 {
+        font-size: 1.1rem;
+    }
+
+    .lead {
+        font-size: 1rem;
+        margin-bottom: 30px;
+    }
+
+    /* ヒーローセクション */
+    .hero {
+        padding: 60px 0 40px;
+    }
+
+    .hero-title {
+        font-size: 1.5rem;
+        line-height: 1.6;
+        margin-bottom: 20px;
+    }
+
+    .hero-subtitle {
+        font-size: 0.95rem;
+        line-height: 1.7;
+        margin-bottom: 30px;
+    }
+
+    .hero-features {
+        gap: 15px;
+        margin-bottom: 30px;
+    }
+
+    .feature-item {
+        font-size: 0.9rem;
+        gap: 10px;
+    }
+
+    .feature-item .icon {
+        width: 35px;
+        height: 35px;
+        font-size: 1.2rem;
+    }
+
+    .cta-button {
+        padding: 15px 25px;
+        font-size: 1rem;
+    }
+
+    .trust-badges {
+        margin-top: 30px;
+        padding-top: 30px;
+    }
+
+    .trust-badges p {
+        font-size: 0.95rem;
+    }
+
+    .badges span {
+        padding: 8px 20px;
+        font-size: 0.85rem;
+    }
+
+    /* 問題セクション */
+    .problem-list {
+        margin-bottom: 30px;
+    }
+
+    .problem-item {
+        padding: 15px;
+        margin-bottom: 15px;
+    }
+
+    .problem-icon {
+        font-size: 1.3rem;
+    }
+
+    .problem-text {
+        font-size: 1rem;
+    }
+
+    .solution-text {
+        font-size: 0.9rem;
+        padding-left: 10px;
+    }
+
+    .solution-headline {
+        font-size: 1.3rem;
+        line-height: 1.7;
+    }
+
+    .solution-headline strong {
+        font-size: 1.5rem;
+    }
+
+    /* 理由セクション */
+    .reason-item {
+        padding: 20px 15px;
+        margin-bottom: 30px;
+    }
+
+    .reason-number {
+        padding: 6px 15px;
+        font-size: 0.9rem;
+    }
+
+    .reason-content {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+
+    .highlight-box {
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    .highlight-box strong {
+        font-size: 1rem;
+    }
+
+    .highlight-box ul,
+    .highlight-box ol {
+        font-size: 0.9rem;
+    }
+
+    /* カラーパレット */
+    .color-palette {
+        grid-template-columns: repeat(2, 1fr);
+        gap: 15px;
+    }
+
+    .color-circle {
+        width: 60px;
+        height: 60px;
+    }
+
+    .color-item strong {
+        font-size: 0.9rem;
+    }
+
+    .color-item p {
+        font-size: 0.8rem;
+    }
+
+    /* ポートフォリオ */
+    .portfolio-grid {
+        grid-template-columns: 1fr;
+        gap: 20px;
+    }
+
+    .portfolio-item img {
+        height: 200px;
+    }
+
+    .portfolio-caption {
+        padding: 15px;
+    }
+
+    .cta-box {
+        padding: 25px 20px;
+    }
+
+    .cta-box p {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+
+    /* 料金テーブル */
+    .pricing-table {
+        font-size: 0.75rem;
+    }
+
+    .pricing-table th {
+        padding: 12px 8px;
+        font-size: 0.9rem;
+    }
+
+    .pricing-table td {
+        padding: 10px 5px;
+    }
+
+    .pricing-table .highlight {
+        font-size: 1rem;
+    }
+
+    .price-example {
+        padding: 20px 15px;
+    }
+
+    .price-example h4 {
+        font-size: 1rem;
+        margin-bottom: 15px;
+    }
+
+    .calculation {
+        padding: 15px;
+    }
+
+    .calc-row {
+        font-size: 0.9rem;
+        padding: 8px 0;
+    }
+
+    .calc-row.total {
+        font-size: 1rem;
+    }
+
+    .per-unit {
+        font-size: 0.9rem;
+    }
+
+    .pricing-notes {
+        padding: 20px 15px;
+    }
+
+    .pricing-notes ul {
+        font-size: 0.85rem;
+    }
+
+    /* 制作の流れ */
+    .flow-step {
+        padding: 20px 15px;
+        margin-bottom: 25px;
+    }
+
+    .step-number {
+        padding: 6px 15px;
+        font-size: 0.85rem;
+    }
+
+    .step-content {
+        font-size: 0.95rem;
+        line-height: 1.8;
+    }
+
+    .step-details {
+        padding: 15px;
+        margin: 15px 0;
+    }
+
+    .step-details ul,
+    .step-details ol {
+        font-size: 0.9rem;
+        margin-left: 15px;
+    }
+
+    .duration {
+        font-size: 0.9rem;
+    }
+
+    .important {
+        padding: 12px;
+        font-size: 0.9rem;
+    }
+
+    .flow-summary {
+        padding: 25px 15px;
+    }
+
+    .flow-summary ul {
+        font-size: 0.9rem;
+    }
+
+    /* お問い合わせ */
+    .contact-box {
+        padding: 25px 15px;
+    }
+
+    .contact-box ul {
+        font-size: 0.9rem;
+    }
+
+    .form-buttons {
+        flex-direction: column;
+    }
+
+    .form-buttons .cta-button {
+        font-size: 1.1rem;
+        padding: 20px 25px;
+    }
+
+    .button-subtitle {
+        font-size: 0.9rem;
+    }
+
+    /* フッター */
+    .footer {
+        padding: 30px 0;
+    }
+
+    .footer p {
+        font-size: 0.85rem;
+    }
+
+    /* 固定CTA - スマホ最適化 */
+    .fixed-cta-button {
+        padding: 16px 10px;
+    }
+
+    .fixed-cta-label {
+        font-size: 0.7rem;
+    }
+
+    .fixed-cta-text {
+        font-size: 1rem;
+    }
+
+    .fixed-cta-arrow {
+        font-size: 1.1rem;
+        right: 8px;
+    }
+}
