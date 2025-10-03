@@ -226,6 +226,21 @@ p {
     background-color: #fff;
     border-radius: 8px;
     box-shadow: 0 2px 8px rgba(0, 0, 0, 0.05);
+    text-decoration: none;
+    color: inherit;
+    transition: all 0.3s ease;
+    cursor: pointer;
+}
+
+.problem-item:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 20px rgba(102, 126, 234, 0.2);
+    border-left: 4px solid #667eea;
+}
+
+.problem-item:hover .solution-text {
+    color: #667eea;
+    font-weight: 600;
 }
 
 .problem-icon {
