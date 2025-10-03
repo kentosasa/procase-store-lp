@@ -1366,6 +1366,8 @@ p {
     .highlight-box ul,
     .highlight-box ol {
         font-size: 0.9rem;
+        margin-left: 20px;
+        padding-left: 0;
     }
 
     /* カラーパレット */
