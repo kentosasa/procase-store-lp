@@ -363,6 +363,7 @@ p {
 .color-circle.lightblue { background-color: #3498db; }
 .color-circle.orange { background-color: #e67e22; }
 .color-circle.beige { background-color: #d4a574; }
+.color-circle.brown { background-color: #8b4513; }
 
 .color-item strong {
     display: block;
