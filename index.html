@@ -1140,11 +1140,11 @@
         <div class="fixed-cta-buttons">
             <a href="https://forms.gle/FZraZKjV5u2qRWADA" class="fixed-cta-button single-color" target="_blank">
                 <span class="fixed-cta-label">単色プラン</span>
-                <span class="fixed-cta-text" id="fixed-cta-text-1">今すぐ無料見積もり</span>
+                <span class="fixed-cta-text">今すぐ無料見積もり</span>
             </a>
             <a href="https://forms.gle/vhiCCPxTTtKwwPBL6" class="fixed-cta-button two-color" target="_blank">
                 <span class="fixed-cta-label">2色プラン</span>
-                <span class="fixed-cta-text" id="fixed-cta-text-2">今すぐ無料見積もり</span>
+                <span class="fixed-cta-text">今すぐ無料見積もり</span>
             </a>
         </div>
     </div>
@@ -1166,29 +1166,11 @@
         }, 5000);
 
         // 固定CTAボタンは常に表示（お問い合わせセクション以外）
-        // スクロール進捗に応じてCTAメッセージを変更
         window.addEventListener('scroll', function() {
             const fixedCta = document.querySelector('.fixed-cta');
             const contactSection = document.querySelector('#contact');
             const contactTop = contactSection.offsetTop;
             const scrollPosition = window.scrollY + window.innerHeight;
-            const documentHeight = document.documentElement.scrollHeight;
-            const scrollPercent = (window.scrollY / (documentHeight - window.innerHeight)) * 100;
-
-            const ctaText1 = document.getElementById('fixed-cta-text-1');
-            const ctaText2 = document.getElementById('fixed-cta-text-2');
-
-            // スクロール進捗に応じてメッセージを変更
-            if (scrollPercent < 30) {
-                ctaText1.textContent = '今すぐ無料見積もり';
-                ctaText2.textContent = '今すぐ無料見積もり';
-            } else if (scrollPercent < 60) {
-                ctaText1.textContent = 'まだ迷っていますか？';
-                ctaText2.textContent = 'まだ迷っていますか？';
-            } else {
-                ctaText1.textContent = '無料で相談する';
-                ctaText2.textContent = '無料で相談する';
-            }
 
             // お問い合わせセクションに到達したら非表示
             if (scrollPosition > contactTop + 100) {
