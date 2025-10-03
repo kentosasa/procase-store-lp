@@ -457,16 +457,30 @@
                 </div>
 
                 <div class="portfolio-item">
-                    <img src="img/daruma.png" alt="ダルマトークン">
+                    <img src="img/original.webp" alt="オリジナルボードゲーム駒">
                     <div class="portfolio-caption">
-                        <h4>和風ゲーム用 ダルマトークン</h4>
+                        <h4>オリジナルボードゲーム駒</h4>
                     </div>
                 </div>
 
                 <div class="portfolio-item">
-                    <img src="img/crown.png" alt="王冠トークン">
+                    <img src="img/original (1).webp" alt="カスタムゲーム駒">
                     <div class="portfolio-caption">
-                        <h4>王冠トークン</h4>
+                        <h4>カスタムゲーム駒</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="img/original (2).webp" alt="多色対応ゲーム駒">
+                    <div class="portfolio-caption">
+                        <h4>多色対応ゲーム駒</h4>
+                    </div>
+                </div>
+
+                <div class="portfolio-item">
+                    <img src="img/original (3).webp" alt="3Dプリント駒">
+                    <div class="portfolio-caption">
+                        <h4>3Dプリント駒</h4>
                     </div>
                 </div>
             </div>
@@ -922,6 +936,21 @@
     </div>
 
     <script>
+        // Hero背景画像の自動スライド
+        const heroSection = document.querySelector('.hero');
+        const bgImages = ['bg-1', 'bg-2', 'bg-3'];
+        let currentBgIndex = 0;
+
+        // 初期背景を設定
+        heroSection.classList.add(bgImages[currentBgIndex]);
+
+        // 5秒ごとに背景を切り替え
+        setInterval(() => {
+            heroSection.classList.remove(bgImages[currentBgIndex]);
+            currentBgIndex = (currentBgIndex + 1) % bgImages.length;
+            heroSection.classList.add(bgImages[currentBgIndex]);
+        }, 5000);
+
         // 固定CTAボタンは常に表示（お問い合わせセクション以外）
         window.addEventListener('scroll', function() {
             const fixedCta = document.querySelector('.fixed-cta');
