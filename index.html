@@ -157,6 +157,30 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
+    <!-- ハンバーガーメニュー (モバイル専用) -->
+    <div class="mobile-menu-toggle" id="mobile-menu-toggle">
+        <span></span>
+        <span></span>
+        <span></span>
+    </div>
+
+    <nav class="mobile-nav" id="mobile-nav">
+        <div class="mobile-nav-header">
+            <h3>目次</h3>
+            <button class="mobile-nav-close" id="mobile-nav-close">&times;</button>
+        </div>
+        <ul class="mobile-nav-links">
+            <li><a href="#problems">こんな悩みはありませんか？</a></li>
+            <li><a href="#reasons">選ばれる5つの理由</a></li>
+            <li><a href="#portfolio">制作事例</a></li>
+            <li><a href="#pricing">料金プラン</a></li>
+            <li><a href="#flow">制作の流れ</a></li>
+            <li><a href="#faq">よくある質問</a></li>
+            <li><a href="#testimonials">お客様の声</a></li>
+            <li><a href="#contact">お問い合わせ</a></li>
+        </ul>
+    </nav>
+
     <!-- ファーストビュー -->
     <section class="hero">
         <div class="container">
@@ -1200,6 +1224,29 @@
             script.src = 'https://cdnjs.cloudflare.com/ajax/libs/lazysizes/5.3.2/lazysizes.min.js';
             document.body.appendChild(script);
         }
+
+        // モバイルハンバーガーメニュー
+        const mobileMenuToggle = document.getElementById('mobile-menu-toggle');
+        const mobileNav = document.getElementById('mobile-nav');
+        const mobileNavClose = document.getElementById('mobile-nav-close');
+        const mobileNavLinks = document.querySelectorAll('.mobile-nav-links a');
+
+        // メニューを開く
+        mobileMenuToggle.addEventListener('click', function() {
+            mobileNav.classList.add('active');
+        });
+
+        // メニューを閉じる
+        mobileNavClose.addEventListener('click', function() {
+            mobileNav.classList.remove('active');
+        });
+
+        // リンクをクリックしたらメニューを閉じる
+        mobileNavLinks.forEach(link => {
+            link.addEventListener('click', function() {
+                mobileNav.classList.remove('active');
+            });
+        });
     </script>
 </body>
 </html>
