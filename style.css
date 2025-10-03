@@ -140,28 +140,31 @@ p {
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
+    width: 300%;
     height: 100%;
-    background-size: cover;
-    background-position: center;
-    opacity: 0;
-    transition: opacity 1.5s ease-in-out;
+    background-size: 33.333% 100%;
+    background-position: 0 center;
+    background-repeat: no-repeat;
     z-index: 0;
+    transition: transform 1.5s ease-in-out;
 }
 
 .hero.bg-1::before {
-    background-image: url('img/hero-bg.png');
-    opacity: 1;
+    background-image: url('img/hero-bg.png'), url('img/hero-bg2.png'), url('img/hero-bg3.png');
+    background-position: 0 center, 100% center, 200% center;
+    transform: translateX(0);
 }
 
 .hero.bg-2::before {
-    background-image: url('img/hero-bg2.png');
-    opacity: 1;
+    background-image: url('img/hero-bg.png'), url('img/hero-bg2.png'), url('img/hero-bg3.png');
+    background-position: 0 center, 100% center, 200% center;
+    transform: translateX(-33.333%);
 }
 
 .hero.bg-3::before {
-    background-image: url('img/hero-bg3.png');
-    opacity: 1;
+    background-image: url('img/hero-bg.png'), url('img/hero-bg2.png'), url('img/hero-bg3.png');
+    background-position: 0 center, 100% center, 200% center;
+    transform: translateX(-66.666%);
 }
 
 /* グラデーションレイヤー（半透明オーバーレイ） */
