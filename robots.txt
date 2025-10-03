@@ -1,0 +1,6 @@
+# PROCASE STORE - ボードゲーム駒3Dプリント製作サービス
+User-agent: *
+Allow: /
+
+# サイトマップの場所
+Sitemap: https://kentosasa.github.io/procase-store-lp/sitemap.xml
